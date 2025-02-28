@@ -5,7 +5,7 @@ def main():
         name = "GitHub Actions"
     else:
         name = input("Enter your name: ")
-    print(f"Hello, {name}!")
+    print(f"Hello from the modify branch, {name}!")
 
 if __name__ == "__main__":
     main()
