@@ -1,5 +1,10 @@
+import os
+
 def main():
-    name = input("Enter your name: ")
+    if os.getenv('CI'):
+        name = "GitHub Actions"
+    else:
+        name = input("Enter your name: ")
     print(f"Hello, {name}!")
 
 if __name__ == "__main__":
