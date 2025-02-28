@@ -3,7 +3,7 @@ name: Deploy Hello App
 on:
   push:
     branches:
-      - main
+      - '**'  # This will match all branches
 
 jobs:
   build:
